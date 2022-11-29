@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+.menu{
+    width: 200px;
+    height: 9vh;
+    position: fixed;
+    top: 20px;
+    left: 0;
+    background-color: aquamarine;
+    transform: translateX(-100%);
+}
+.menu.active{
+    transform: translateX(0);
+}
+.opnbtn{
+    width:55px;
+    height:55px;
+    position: absolute;
+    left: 100%;
+    margin-left: 0;
+    border: 0;
+    background-color: blueviolet;
+    cursor: pointer;
+}
+.opnbtn img{
+    width: 100%;
+}
+.btn-color{
+    display: flex;
+}
+.btn1,.btn2,.btn3{
+    width: 30px;
+    height: 30px;
+   margin: 10px;
+}
+.btn1{
+    background-color: #000;
+}
+.btn2{
+    background-color: #fff;
+}
+.btn3{
+    background-color: chocolate;
+}
+/* calculator */
+.container{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  border-radius: 10px;
+  transform: translate(-50%,-50%);
+  padding: 25px;
+  box-shadow: 1px 0px 2px 4px #000;
+  background-color: #111;
+}
+.output{
+    margin-top: 10px;
+    color: #fff;
+    border: none;
+    font-size: 30px;
+    text-align: end;
+    width: 250px;
+    height: 50px;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: darkgreen;
+    box-shadow: 5px 5px 10px #000,inset 5px 5px 10px #000;
+}
+.all_btn{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+  
+}
+.all_btn button{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 8px;
+    border: none;
+    box-shadow: 5px 5px 10px #000,inset 5px 5px 10px #000;
+    font-size: 25px;
+    background-color: #111;
+    color: #fff;
+}
+.all_btn button:active{
+    box-shadow: 0 0 10x rgb(194, 21, 113);
+}
+.all_btn .clr{
+    grid-column: span 2;
+    width: 110px;
+    background-color:blue;
+}
+.all_btn .de{
+    background-color: red;
+}
+.all_btn .plus{
+    grid-row: span 2;
+    height: 110px;
+}
+.all_btn .eql{
+    background-color: chartreuse;
+
+}
